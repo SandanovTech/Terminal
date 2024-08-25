@@ -22,16 +22,17 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TerminalTheme {
-                val viewModel : TerminalViewModel = viewModel()
-                val screenState = viewModel.state.collectAsState()
-                when (val currentState = screenState.value) {
-                    is TerminalScreenState.Initial -> {
-                        Log.d("MainActivity","Initial")
-                    }
-                    is TerminalScreenState.Content -> {
-                        Terminal(bars = currentState.barList)
-                    }
-                }
+//                val viewModel : TerminalViewModel = viewModel()
+//                val screenState = viewModel.state.collectAsState()
+//                when (val currentState = screenState.value) {
+//                    is TerminalScreenState.Initial -> {
+//                        Log.d("MainActivity","Initial")
+//                    }
+//                    is TerminalScreenState.Content -> {
+//                        Terminal(bars = currentState.barList)
+//                    }
+//                }
+                Test()
             }
         }
     }
